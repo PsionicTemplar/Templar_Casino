@@ -45,11 +45,23 @@ public class Start extends JavaPlugin {
 
 		plugin = this;
 	}
+	
+	/**
+	 * Load all events
+	 * 
+	 * @author Nicholas Braniff
+	 */
 
 	private void loadEvents() {
 		//List of all the events that need loaded
 //		getServer().getPluginManager().registerEvents((Listener) CLASS, this);
 	}
+	
+	/**
+	 * Run on disable
+	 * 
+	 * @author Nicholas Braniff
+	 */
 
 	public void onDisable() {
 
