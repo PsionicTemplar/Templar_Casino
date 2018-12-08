@@ -1,0 +1,8 @@
+name: Templar_Casino
+main: me.PsionicTemplar.templarcasino.Start
+version: 0.1
+author: PsionicTemplar
+description: Casino Games Added in Vanilla Mincraft!
+commands:
+  test:
+    description: Does whatever I want it to...
