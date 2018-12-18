@@ -12,6 +12,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import net.md_5.bungee.api.ChatColor;
+
 public class SinglePoker extends BaseCommand {
 
 	private static int info = 4;
@@ -52,6 +54,12 @@ public class SinglePoker extends BaseCommand {
 			}
 			i.setItem(slot, none);
 		}
+		
+		ItemStack information = new ItemStack(Material.PAPER);
+		im = information.getItemMeta();
+		im.setDisplayName(ChatColor.AQUA + "Single Player Poker");
+		im.setLore(Arrays.asList(ChatColor.DARK_AQUA + "To view payouts/start, place a bet!"));
+		
 		//TODO more work to create the GUI
 		
 		player.openInventory(i);
