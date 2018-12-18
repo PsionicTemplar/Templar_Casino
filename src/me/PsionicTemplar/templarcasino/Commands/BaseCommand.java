@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.UUID;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -121,7 +120,7 @@ public abstract class BaseCommand implements Listener{
 	 * @param player
 	 */
 
-	protected abstract void openGui(Location location, Player player);
+	protected abstract void openGui(Player player);
 	
 	/**
 	 * Inventory click event used to call the abstract method for inventory clicks.
